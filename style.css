@@ -1,0 +1,160 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:20px auto;
+    padding:20px;
+    background-color: #F5ECE0;
+    color: #693382;
+}
+table, th, td {
+    border: 2px solid #fff;
+    border-collapse: collapse;
+    padding: 8px 12px;
+    text-align: center;
+}
+th {
+    background-color: #f2f2f2;
+}
+.form-box{
+    display: block;
+    border: 2px solid #fff;
+    padding: 20px;
+    width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+}
+.form-group{
+    margin-bottom:15px;
+}
+label{
+    display:block;
+    margin-bottom: 5px;
+    font-weight:bold;
+}
+#username,#password,#name,#roll,#age,#sem{
+    width:100%;
+    padding: 8px;
+    border:none;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#interest{
+    padding: 4px;
+    border:none;
+    border-radius: 4px;
+}
+fieldset{
+    border:none;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+legend{
+    font-weight: bold;
+}
+.form-button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#submit, button{
+    padding: 10px 15px;
+    border:none;
+    cursor: pointer;
+    font-size: 16px;
+    color: hsl(281, 44%, 35%);
+    background-color: hsl(281, 44%, 80%);
+}
+button:hover,#submit:hover{
+    background-color: hsl(281, 44%, 25%);
+    color:hsl(281, 44%, 95%)
+}
+
+.review .form-group .output_box{
+    width:100%;
+    padding: 8px;
+    border:none;
+    box-sizing: border-box;
+    background-color: #F5ECE0;
+    ;
+}
+.output{
+    width: 1000px;
+    color: #693382;
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(6,1fr);
+    grid-template-areas: 
+    "n no "
+    "r ro "
+    "a ao "
+    "g go "
+    "c co "
+    "i io "
+    ;
+    gap: .5rem;
+}
+.output:only-of-type span{
+    border: 2px solid white;
+    background-color: #F5ECE0;
+}
+.h1rev{
+    color: ;
+    
+}
+.tag{
+    place-content: center;
+    height: 2rem;
+    padding: .5rem 0rem .5rem 1rem;
+    background-color: white;
+    color: cadetblue;
+}
+.outputfield{
+    place-content: center;
+    height: 2rem;
+    padding: .5rem 0rem .5rem 1rem;
+    background-color: white;
+    color: 693382;
+}
+
+#nametag{
+    grid-area: n;
+}
+#rolltag{
+    grid-area: r;
+}
+#agetag{
+    grid-area: a;
+}
+#gendertag{
+    grid-area: g;
+}
+#classtag{
+    grid-area: c;
+}
+#intresttag{
+    grid-area: i;
+}
+#nameopfield{
+    grid-area: no;
+}
+#rollopfield {
+    grid-area: ro;
+}
+#ageopfield{
+    grid-area: ao;
+}
+#genderopfield{
+    grid-area: go;
+}
+#classopfield{
+    grid-area: co;
+}
+#intrestopfield{
+    grid-area: io;
+}
